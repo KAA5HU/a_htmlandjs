@@ -4,6 +4,7 @@ const onClickAddEle = document.getElementById("onClickAdd");
 const onClickDelEle = document.getElementById("onClickDel");
 const onClickAddAtBegEle = document.getElementById('onClickAddAtBeg');
 const inputElementBegEle = document.getElementById('inputElementBeg');
+const onClickDelStartEle = document.getElementById('onClickDelStart');
 
 var count = 0;
 
@@ -28,39 +29,30 @@ function createAndAppend(number) {
     imgCon.classList.add("fas",  "fa-long-arrow-alt-right", "arrow")
     imgAndNode.appendChild(imgCon)
 
-    linkedListEle.appendChild(imgAndNode)
-
+    return imgAndNode
 }
 
-function removeChild() {
-    let count = linkedListEle.getElementsByTagName("i").length
-    for (var i = 0; i<count; i++) {
-        a = linkedListEle.id
-        console.log(a)
-        linkedListEle.removeChild(linkedListEle.id)
-    }
-    
-}
-
-function appendStarting() {
-    
-}
 
 function addEle() {
     let number = inputElementEle.value;
-    createAndAppend(number)
+    linkedListEle.appendChild(createAndAppend(number))
 }
 
 function delEle() {
 
-    removeChild()
+    linkedListEle.lastChild.remove()
 }
 
 function addBegEle() {
     let number = inputElementBegEle.value
-    appendStarting()
+    linkedListEle.prepend(createAndAppend(number))
+}
+
+function removeStart() {
+    linkedListEle.firstChild.remove()
 }
 
 onClickAddEle.addEventListener('click', addEle)
 onClickDelEle.addEventListener('click', delEle)
 onClickAddAtBegEle.addEventListener('click', addBegEle)
+onClickDelStartEle.addEventListener('click', removeStart)
