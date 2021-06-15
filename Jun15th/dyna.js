@@ -21,7 +21,7 @@ function createAndAppend(each) {
 }
 
 function displayResults(results) {
-    for (let each in results) {
+    for (let each of results) {
         createAndAppend(each)
     }
     
