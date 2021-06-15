@@ -4,10 +4,8 @@ const inputEle = document.getElementById("input");
 let results = []
 
 function createAndAppend(each) {
-
     let divEle = document.createElement("div");
-    divEle.classList.add()
-    console.log(each.name)
+    divEle.classList.add("each-person")
 
     let nameEle = document.createElement("p")
     nameEle.textContent = each.name
@@ -23,7 +21,9 @@ function createAndAppend(each) {
 function displayResults(results) {
     for (let each of results) {
         createAndAppend(each)
+        
     }
+    
     
 }
 
@@ -40,7 +40,7 @@ function getData(event) {
                 .then(function(jsonData) {
                     console.log(jsonData)
                     results = jsonData
-                    displayResults()
+                    displayResults(results)
                 })
 }
 

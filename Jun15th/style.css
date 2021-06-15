@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 .search-con {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,4 +19,16 @@
     min-width: 300px;
     border-radius: 6px;
     font-size: 25px;
+}
+.results-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.each-person {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
 }
