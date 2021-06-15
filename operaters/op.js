@@ -626,3 +626,109 @@ console.log(bit_xor(num1, num2))
 console.log(left_shift(num1, num2))
 console.log(right_shift(num1, num2))
 console.log(zero_fill_right_shift(num1, num2))
+
+num1 = Symbol("a")
+num2 = Symbol("b")
+
+//------------------------------------------
+console.log("operaters using data types symbols")
+console.log(add(num1, num2))
+console.log(sub(num1, num2))
+console.log(mul(num1, num2))
+console.log(div(num1, num2))
+console.log(expo(num1, num2))
+console.log(modu(num1, num2))
+console.log(incre(num1))
+console.log(decre(num1))
+//---------------------------------------------
+console.log("-------------------------------")
+
+console.log(equal(num1, num2))
+console.log(add_eq(num1, num2))
+console.log(sub_eq(num1, num2))
+console.log(div_eq(num1, num2))
+console.log(expo_eq(num1, num2))
+console.log(modu_eq(num1, num2))
+console.log(expo_eq(num1))
+
+//--------------------------------------------------
+console.log("/////////////////////////////////////")
+
+console.log(equal_to(num1, num2))
+console.log(equal_type_to(num1, num2))
+console.log(not_equal_to(num1, num2))
+console.log(not_equal_type_to(num1, num2))
+console.log(grea(num1, num2))
+console.log(less(num1, num2))
+console.log(grea_eq(num1))
+console.log(less_eq(num1))
+console.log(grea_eq(num1))
+console.log(ternary(num1))
+
+//--------------------------------------------------------
+console.log("---------------------------------------------")
+console.log(two_and(num1, num2))
+console.log(two_or(num1, num2))
+console.log(not(num1, num2))
+
+//--------------------------------------------------------
+console.log("///////////////////////////////////////")
+console.log(type(num1))
+console.log(bit_and(num1, num2))
+console.log(bit_or(num1, num2))
+console.log(bit_xor(num1, num2))
+console.log(left_shift(num1, num2))
+console.log(right_shift(num1, num2))
+console.log(zero_fill_right_shift(num1, num2))
+
+num1 = Symbol("A")
+num2 = true
+
+console.log(add(num1, num2))
+console.log(sub(num1, num2))
+console.log(mul(num1, num2))
+console.log(div(num1, num2))
+console.log(expo(num1, num2))
+console.log(modu(num1, num2))
+console.log(incre(num1))
+console.log(decre(num1))
+//---------------------------------------------
+console.log("-------------------------------")
+
+console.log(equal(num1, num2))
+console.log(add_eq(num1, num2))
+console.log(sub_eq(num1, num2))
+console.log(div_eq(num1, num2))
+console.log(expo_eq(num1, num2))
+console.log(modu_eq(num1, num2))
+console.log(expo_eq(num1))
+
+//--------------------------------------------------
+console.log("/////////////////////////////////////")
+
+console.log(equal_to(num1, num2))
+console.log(equal_type_to(num1, num2))
+console.log(not_equal_to(num1, num2))
+console.log(not_equal_type_to(num1, num2))
+console.log(grea(num1, num2))
+console.log(less(num1, num2))
+console.log(grea_eq(num1))
+console.log(less_eq(num1))
+console.log(grea_eq(num1))
+console.log(ternary(num1))
+
+//--------------------------------------------------------
+console.log("---------------------------------------------")
+console.log(two_and(num1, num2))
+console.log(two_or(num1, num2))
+console.log(not(num1, num2))
+
+//--------------------------------------------------------
+console.log("///////////////////////////////////////")
+console.log(type(num1))
+console.log(bit_and(num1, num2))
+console.log(bit_or(num1, num2))
+console.log(bit_xor(num1, num2))
+console.log(left_shift(num1, num2))
+console.log(right_shift(num1, num2))
+console.log(zero_fill_right_shift(num1, num2))
