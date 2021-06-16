@@ -9,26 +9,45 @@
     <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="linked-container">
-        <h1 class="heading">Linked List Operations</h1>
-        <div class="add-elements-con">
-            <label class="input-label">Add Elements at the End:</label>
-            <input type="text" placeholder="Enter the elements" class="input-element" id="inputElement"/>
-            <button class="button" id="onClickAdd">Add</button>
-        </div>
-        <div class="del-elements-con">
-            <button class="button del-button" id="onClickDel">Delete Element at the End</button>
-        </div>
-        <div class="add-elements-con">
-            <label class="input-label">Add Elements at the Beggining:</label>
-            <input type="text" placeholder="Enter the elements" class="input-element" id="inputElementBeg"/>
-            <button class="button" id="onClickAddAtBeg">Add</button>
-        </div>
-        <div class="del-elements-con">
-            <button class="button del-button" id="onClickDelStart">Delete Element at the begin</button>
-        </div>
-        <div class="linked-list" id="linkedList">
+    <!--Web page starts -->
+    <div class="bg"> 
+        <div class="linked-container">
+            <h1 class="heading">Linked List Operations</h1>
+            <!--Adding elements container-->
+            <div class="oparations">
+            <div class="add-elements-con">
+                <label class="input-label">Add Elements at the End</label>
+                <input type="text" placeholder="Enter the elements" class="input-element" id="inputElement"/>
+                <button class="button" id="onClickAdd">Add</button>
+            </div>
             
+            <!--Adding elements first to the linkedListEle-->
+            <div class="add-elements-con">
+                <label class="input-label">Add Elements at the Beggining</label>
+                <input type="text" placeholder="Enter the elements" class="input-element" id="inputElementBeg"/>
+                <button class="button" id="onClickAddAtBeg">Add</button>
+            </div>
+            
+            <div class="add-elements-con">
+                <label class="input-label">Remove Node</label>
+                <input type="text" placeholder="Enter the elements" class="input-element" id="removeNode"/>
+                <button class="button" id="ElementRemoveClick">Remove</button>
+            </div>
+            <div class="delete-con">
+            <!--deleting the elements in the last-->
+                <div class="del-elements-con">
+                    <button class="del-button" id="onClickDel">Delete Element at the End</button>
+                </div>
+                <!--deleting the elements in the first-->
+                <div class="del-elements-con">
+                    <button class="del-button" id="onClickDelStart">Delete Element at the begin</button>
+                </div>
+            </div>
+            <!--Elements Here-->
+            <div class="linked-list" id="linkedList">
+                
+            </div>
+        </div>
         </div>
     </div>
     <script src="dyna.js"></script>

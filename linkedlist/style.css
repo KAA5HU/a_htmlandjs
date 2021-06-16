@@ -4,17 +4,40 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.bg {
+    background-image: url('https://cdn.wallpapersafari.com/35/85/OpXyn4.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
 .linked-container {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-left: 20px;
+    background: rgba(0, 0, 0, 0.73);
+    padding: 70px;
+    color: #fff;
+    width: 90%;
+    height: 130;
 }
+
+
 .heading {
     font-size: 30px;
     font-family: "Roboto";
-    color: green;
+    color: rgb(170, 68, 21);
     text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
 }
+
 .add-elements-con {
     display: flex;
     flex-direction: inline-block;
@@ -24,12 +47,22 @@
     font-size: 25px;
     font-family: "Roboto";
     padding-right: 20px;
+    align-self: flex-start;
+    color: rgb(28, 180, 185);
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 400px;
 }
 .input-element {
     height: 35px;
     width: 200px;
     padding: 10px;
     margin-right: 20px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
 }
 .button {
     height: 35px;
@@ -38,9 +71,23 @@
     background-color: brown;
     color: cornsilk;
     border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 25px;
 }
 .del-button {
+    height: 35px;
+    width: 100px;
+    border-width: 0px;
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 5px;
     margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
 }
 .linked-list {
     display: flex;
@@ -67,4 +114,8 @@
 }
 .a {
     display: flex;
+}
+.delete-con {
+    display: flex;
+    flex-direction: row;
 }
