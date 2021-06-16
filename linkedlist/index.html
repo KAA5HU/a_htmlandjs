@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LinkedList</title>
     <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,6 +33,27 @@
                 <input type="text" placeholder="Enter the elements" class="input-element" id="removeNode"/>
                 <button class="button" id="ElementRemoveClick">Remove</button>
             </div>
+            <div class="add-elements-con">
+                <label class="input-label">Add Between the Elements</label>
+                <input type="text" placeholder="Enter the new elements" class="input-element" id="newNumber"/>
+                <input type="text" placeholder="Enter the exiting elements" class="input-element" id="exitingNumber"/>
+                <button class="button" id="addside">Add</button>
+            </div>
+            <div class="add-elements-con">
+                <label class="input-label">Replace the Elements</label>
+                <input type="text" placeholder="Enter the new elements" class="input-element" id="replaceNew"/>
+                <input type="text" placeholder="Enter the exiting elements" class="input-element" id="replaceExit"/>
+                <button class="button" id="replceClick">Add</button>
+            </div>
+            <div class="add-elements-con">
+                <label class="input-label">Add After Elements</label>
+                <input type="text" placeholder="Enter the new elements" class="input-element" id="addNewNumber"/>
+                <input type="text" placeholder="Enter the exiting elements" class="input-element" id="addExitNumber"/>
+                <button class="button" id="addAfterClick">Add</button>
+            </div>
+            <div class="sort">
+                <button class="del-button" id="sort">Sort the list</button>
+            </div>
             <div class="delete-con">
             <!--deleting the elements in the last-->
                 <div class="del-elements-con">
@@ -43,6 +64,7 @@
                     <button class="del-button" id="onClickDelStart">Delete Element at the begin</button>
                 </div>
             </div>
+
             <!--Elements Here-->
             <div class="linked-list" id="linkedList">
                 

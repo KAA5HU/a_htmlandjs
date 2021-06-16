@@ -8,7 +8,16 @@ const inputElementBegEle = document.getElementById('inputElementBeg');
 const onClickDelStartEle = document.getElementById('onClickDelStart');
 const removeNodeEle = document.getElementById('removeNode');
 const ElementRemoveClickEle = document.getElementById('ElementRemoveClick');
-
+const newNumberEle = document.getElementById('newNumber');
+const exitingNumberEle = document.getElementById('exitingNumber');
+const addsideEle = document.getElementById('addside');
+const replaceNewEle = document.getElementById('replaceNew');
+const replaceExitEle = document.getElementById('replaceExit');
+const replceClickEle = document.getElementById('replceClick');
+const addNewNumberEle = document.getElementById('addNewNumber');
+const addExitNumberEle = document.getElementById('addExitNumber');
+const addAfterClickEle = document.getElementById('addAfterClick');
+const sortEle = document.getElementById('sort');
 //Here every node and arrow is creating but its not printing
 //its just returning
 function createAndAppend(number) {
@@ -77,6 +86,74 @@ function removeAnyEle() {
     removeNodeEle.value = ""
 }
 }
+//function used to print the elements before the user enter element
+function addside() {
+    newNum = newNumberEle.value;
+    exitNumber = exitingNumberEle.value;
+    let count = document.getElementsByTagName('i').length
+    if (count == 0) {
+        alert("List is empty") //if list is empty
+    }
+    else {
+        for (var i = 0; i<count; i++) {
+            if (document.getElementById("node" + exitNumber).textContent == exitNumber) {
+                var a = createAndAppend(newNum)
+                linkedListEle.insertBefore(a, document.getElementById("node" + exitNumber))
+                break
+            } 
+        }
+    }
+}
+//function used to replace elements
+function replaceBtt() {
+    let exitNUm = replaceExitEle.value
+    let newNUm = replaceNewEle.value
+    let count = document.getElementsByTagName('i').length
+    if (count == 0) {
+        alert("List is empty") //if list is empty
+    }else {
+        for (var i=0; i< count; i++) {
+            if (document.getElementById("node" + exitNUm).textContent == exitNUm) {
+                var a = createAndAppend(newNUm)
+                r = document.getElementById("node" + exitNUm).childNodes[0]
+                r.replaceChild(a, r.childNodes[0])
+                
+            }
+        }
+    }
+}
+
+//function used to print teh elememts after the user enter the elements
+function addAfter() {
+    let newNum = addNewNumberEle.value
+    let exitNUm = addExitNumberEle.value
+    let count = document.getElementsByTagName('i').length
+    if (count == 0) {
+        alert("List is empty") //if list is empty
+    } 
+    else {
+        for (var i=0; i<count; i++) {
+            if (document.getElementById("node" + exitNUm).textContent == exitNUm) {
+                
+                var a = createAndAppend(newNum)
+                linkedListEle.insertBefore(a, document.getElementById("node" + exitNUm).nextSibling)
+                break
+            }
+        }
+    }
+}
+
+function sorting() {
+    let count = document.getElementsByTagName('i').length
+    firstChild = linkedListEle.firstChild.textContent
+    a = document.getElementById("node"+firstChild)
+    b = a.nextSibling
+    console.log(a)
+    
+    if (a.textContent > b.textContent) {
+        console/log("true")     
+    }  
+}
 
 
 //This are the event listeners
@@ -85,3 +162,7 @@ onClickDelEle.addEventListener('click', delEle)
 onClickAddAtBegEle.addEventListener('click', addBegEle)
 onClickDelStartEle.addEventListener('click', removeStart)
 ElementRemoveClickEle.addEventListener('click', removeAnyEle)
+addsideEle.addEventListener('click', addside)
+replceClickEle.addEventListener('click', replaceBtt)
+addAfterClickEle.addEventListener('click', addAfter)
+sortEle.addEventListener('click', sorting)
